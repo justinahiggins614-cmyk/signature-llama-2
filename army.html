@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bot Army — Signature Llama 2.0</title>
+<meta name="description" content="Deploy Signature AI soldiers — the 2.0 bot army, expert level always.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a14;color:#e8e8f0;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+.tabbar{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:12px;background:#12121f;border-bottom:2px solid #f5c542;position:sticky;top:0;z-index:100}
+.tabbar a{color:#f5c542;text-decoration:none;padding:8px 14px;border:1px solid #f5c542;border-radius:20px;font-size:.85em;font-weight:600}
+.tabbar a.on,.tabbar a:hover{background:#f5c542;color:#0a0a14}
+.hero{position:relative;text-align:center;padding:0 0 24px}
+.hero img{width:100%;max-height:340px;object-fit:cover;display:block}
+.kicker{text-align:center;color:#f5c542;font-size:.8em;letter-spacing:3px;margin:16px 0 6px}
+h1{text-align:center;font-size:2.4em;color:#f5c542;margin:6px 0}
+.tagline{text-align:center;font-size:1.2em;color:#b9b9d0;margin-bottom:18px}
+.card{background:#14141f;border:1px solid #2a2a3f;border-radius:12px;padding:20px;margin:16px 0}
+.card h2{color:#f5c542;margin-bottom:10px}
+.card h3{color:#f5c542;margin:14px 0 6px}
+.btn{display:inline-block;background:#f5c542;color:#0a0a14;font-weight:700;padding:10px 22px;border:none;border-radius:8px;cursor:pointer;font-size:1em;margin:6px 4px;text-decoration:none}
+.btn:hover{background:#ffe08a}
+.btn.ghost{background:transparent;color:#f5c542;border:2px solid #f5c542}
+input[type=text],textarea,select{width:100%;padding:12px;border:2px solid #2a2a3f;border-radius:8px;background:#0f0f1a;color:#e8e8f0;font-size:1em;margin:8px 0}
+.demo-out{background:#0f0f1a;border:1px solid #2a2a3f;border-radius:8px;padding:14px;margin:10px 0;min-height:60px;white-space:pre-wrap}
+.verbar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;background:#101a10;border:1px solid #3a6b3a;border-radius:10px;padding:12px;margin:14px 0;font-size:.9em}
+.verbar b{color:#7cfc7c}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:14px 0}
+.acard{background:#14141f;border:1px solid #2a2a3f;border-radius:10px;padding:16px}
+.acard h3{color:#f5c542;margin-bottom:6px}
+.acard .count{font-size:1.6em;color:#7cfc7c;font-weight:700}
+.acard .st{font-size:.8em;padding:3px 10px;border-radius:12px;display:inline-block;margin-top:6px}
+.st.live{background:#1a4d1a;color:#7cfc7c}.st.build{background:#4d3d1a;color:#f5c542}.st.plan{background:#3a3a4d;color:#b9b9d0}
+pre{background:#0f0f1a;border:1px solid #2a2a3f;border-radius:8px;padding:14px;overflow-x:auto;font-size:.85em;margin:10px 0}
+code{color:#7cfc7c}
+.loop{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:16px 0}
+.step{background:#1a1a2e;border:2px solid #f5c542;color:#f5c542;padding:10px 14px;border-radius:8px;font-weight:700;font-size:.9em}
+.arrow{color:#f5c542;font-size:1.4em;align-self:center}
+.rolechip{display:inline-block;background:#1a1a2e;border:1px solid #f5c542;color:#f5c542;padding:6px 14px;border-radius:16px;margin:4px;cursor:pointer;font-size:.9em}
+.rolechip:hover{background:#f5c542;color:#0a0a14}
+.rolechip.locked{background:#f5c542;color:#0a0a14;font-weight:700}
+.jahnet{background:#0d0d18;border-top:2px solid #f5c542;padding:20px 16px;margin-top:32px;font-size:.85em;line-height:2}
+.jahnet-t{color:#f5c542;font-weight:700;letter-spacing:2px;margin-right:10px}
+.jahnet a{color:#8a8aa0;text-decoration:none;margin-right:12px}
+.jahnet a:hover{color:#f5c542}
+.jahnet .here{display:inline-block;background:#f5c542;color:#0a0a14;font-weight:700;padding:4px 14px;border-radius:16px;margin-top:8px}
+footer{text-align:center;padding:20px;color:#5a5a70;font-size:.8em}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9em}
+th,td{border:1px solid #2a2a3f;padding:8px;text-align:left}
+th{background:#1a1a2e;color:#f5c542}
+</style>
+</head>
+<body>
+<nav class="tabbar" aria-label="Site pages"><a href="index.html">Front Door</a><a href="model.html">Model</a><a href="archives.html">Archives</a><a href="how.html">How It Works</a><a href="roles.html">Roles</a><a href="army.html" class="on">Bot Army</a><a href="downloads.html">Downloads</a></nav>
+<div class="wrap">
+<p class="kicker">SITE 38 OF 38 · THE JAH NETWORK</p>
+<h1>👮 Bot Army</h1>
+<p class="tagline">Deploy Signature AI soldiers — expert level, always</p>
+
+<div class="card"><h2>🛡️ What the army is</h2>
+<p>A deployable force of Signature-version AI soldiers. Each one runs the full 2.0 stack — router, archives, tools, truth engine — locked into its assigned role. They can run your ecosystem, handle public-facing roles, and work in parallel. <b>Legally distinct Signature builds</b>, carrying the Signature identity, DNA, and hash.</p></div>
+
+<div class="card"><h2>➕ Deploy a Soldier</h2>
+<input type="text" id="soldierrole" placeholder="#Assume-Role-Customer-Support" aria-label="Soldier role">
+<input type="text" id="soldiername" placeholder="Soldier name (e.g. Support-01)" aria-label="Soldier name">
+<button class="btn" onclick="deploy()">🚀 Deploy soldier</button>
+<div class="demo-out" id="armyout">No soldiers deployed yet. Deploy your first above.</div></div>
+
+<div class="card"><h2>📋 Active Soldiers</h2>
+<div id="soldierlist"><p style="color:#8a8aa0">None yet.</p></div></div>
+
+<div class="card"><h2>⚔️ Army Capabilities</h2>
+<table>
+<tr><th>Capability</th><th>Detail</th></tr>
+<tr><td>Parallel deployment</td><td>Dozens of soldiers, each in its own role, working simultaneously</td></tr>
+<tr><td>Role lock</td><td>Hashtag roles — stays locked until changed</td></tr>
+<tr><td>Ecosystem operation</td><td>Can operate any of the 37 Signature sites via the universal API</td></tr>
+<tr><td>Public-facing</td><td>Customer support, guides, teachers — expert level, always</td></tr>
+<tr><td>Identity</td><td>Each soldier: Signature ID, DNA, hash, version, audit log</td></tr>
+<tr><td>Coordination</td><td>Swarm mode — soldiers debate, judge selects the best answer</td></tr>
+</table></div>
+
+<script>
+var SOLDIERS = [];
+function deploy(){
+  var role = document.getElementById('soldierrole').value.trim();
+  var name = document.getElementById('soldiername').value.trim() || ('Soldier-'+String(SOLDIERS.length+1).padStart(2,'0'));
+  var out = document.getElementById('armyout');
+  if(!/^#[A-Za-z][A-Za-z0-9\-]*$/.test(role)){ out.textContent = 'Give the soldier a role like #Assume-Role-Customer-Support.'; return; }
+  var s = {name:name, role:role, id:'SIG-SOLDIER-'+String(SOLDIERS.length+1).padStart(4,'0'), status:'ACTIVE'};
+  SOLDIERS.push(s);
+  out.textContent = '✅ Deployed '+name+' as '+role+' ('+s.id+') — ACTIVE, expert level.';
+  document.getElementById('soldierrole').value='';
+  document.getElementById('soldiername').value='';
+  renderArmy();
+}
+function renderArmy(){
+  var d = document.getElementById('soldierlist');
+  if(!SOLDIERS.length){ d.innerHTML = '<p style="color:#8a8aa0">None yet.</p>'; return; }
+  d.innerHTML = SOLDIERS.map(function(s){
+    return '<div class="acard" style="margin:8px 0"><h3>👮 '+s.name+'</h3><p><b>'+s.id+'</b> · <span class="rolechip locked">'+s.role+'</span></p><p style="color:#7cfc7c">● '+s.status+' — expert level, role locked</p></div>';
+  }).join('');
+}
+</script>
+</div>
+<div class="jahnet"><span class="jahnet-t">THE JAH NETWORK</span><a href="https://justinahiggins614-cmyk.github.io/signature-math/">1 Signature Math</a>
+<a href="https://justinahiggins614-cmyk.github.io/jah-calculator/">2 Signature Universal Paradox Immune Calculator</a>
+<a href="https://justinahiggins614-cmyk.github.io/jah-dictionary/">3 The Signature Dictionary</a>
+<a href="https://justinahiggins614-cmyk.github.io/jah-wiki/">4 JAH Wiki</a>
+<a href="https://justinahiggins614-cmyk.github.io/jah-n-wiki-leaks/">5 JAH-N Wiki Leaks</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-llama/">6 Signature Llama: The Fully Cyber Utilizable AI</a>
+<a href="https://justinahiggins614-cmyk.github.io/jah-ai-models/">7 The Signature AI Phone Book</a>
+<a href="https://justinahiggins614-cmyk.github.io/cyber-patent-catalog/">8 Globally Rejustered Patent Catalog</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-one-archive/specs.html">9 Signature Spec Catalog Pending Patents</a>
+<a href="https://justinahiggins614-cmyk.github.io/jah-computer-systems/">10 The Signature PC System Depository</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-books/">11 The Signature Book Depository</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-comics/">12 The Signature Comic Store</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-newspapers/">13 The Signature Global Newspaper Archive</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-backend/">14 The Signature AI Mix and Match Generator</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-boundless-generators/">15 The Signature Boundless Generator Archive</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-ai-mixlab/">16 The Signature AI Mix Lab</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-ai-olypics/">17 AI Olympics</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-chip-maker/">18 The Signature Computer Chip Maker and Archive</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-app-archive/">19 The Signature App Archive</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-ai-robot-matcher/">20 The Signature AI to Robot Matcher</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-experiment-solver/">21 The Signature Experiment Solver</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-ai-image-video-maker/">22 Signature AI Pixel</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-ai-song-maker/">23 Signature Music Studio</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-fixit/">24 The Signature Mr Fix-It</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-university/">25 The Signature University</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-earth/">26 Signature Earth</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-flight-school/">27 The Signature Flight School</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-game-store/">28 The Signature Game Store</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-website-creator/">29 The Signature Website Creator</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-antivirus/">30 The Signature Antivirus</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-os-updater/">31 The Signature OS Updater</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-space-mapping/">32 Signature Space Mapping</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-cookbook/">33 The Signature Cookbook</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-spell-check/">34 Spell Check</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-image-grid-measure/">35 Grid Measure</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-cyber-mega-mall/">36 The Signature Cyber Mega-Mall</a>
+<a href="https://justinahiggins614-cmyk.github.io/signature-3d-print/">37 The Signature 3D Print Mega Mall</a><span class="here">38 Signature Llama 2.0 — YOU ARE HERE</span></div>
+<footer>SITE 38 OF 38 · THE JAH NETWORK<br>Signature Llama 2.0 — The Best Llama of the Future · Justin Addam Higgins' Signature AI</footer>
+</body>
+</html>
