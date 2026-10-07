@@ -212,7 +212,7 @@ function supremeAnswer(q){
       'Signature Llama 2.0, the supreme build, at your service. I look words up live, calculate, take roles, and know the whole network. For full open-ended reasoning, the Industry Standard cloud path on the Llama site is the deeper brain.'
     ]);
   }
-  if(/\b(are you (ai|real|conscious|alive|sentient)|testing you|aware or|just (a )?copy|copy.?paste|robot|bot\?)\b/.test(low)){
+  if(/\bare you\b[^.?!]{0,50}\b(ai|a\.?i\.?|artificial intelligence|real|conscious|alive|sentient|robot|bot)\b/.test(low) || /\btesting you\b/.test(low) || /\bjust (a )?copy/.test(low)){
     SupremeConv.remember(q,'testchallenge');
     return roleTag + SupremeConv.pick('testchallenge', [
       'Straight answer: I\u2019m the on-device conversational layer of Signature Llama 2.0 — I understand your words well enough to look things up and hold a conversation, but I\u2019m not the trained 4M model itself and I\u2019m not conscious. The full reasoning brain is the Industry Standard path (free key) on the Signature Llama site.',
