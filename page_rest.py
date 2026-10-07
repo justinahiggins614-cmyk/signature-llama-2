@@ -127,49 +127,49 @@ document.getElementById('roleq').addEventListener('keydown', function(e){ if(e.k
 # ---- ARMY ----
 ARMY_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
 <h1>\U0001F46E Bot Army</h1>
-<p class="tagline">Deploy Signature AI soldiers \u2014 expert level, always</p>
+<p class="tagline">Deploy Signature AI bots \u2014 expert level, always</p>
 
 <div class="card"><h2>\U0001F6E1\uFE0F What the army is</h2>
-<p>A deployable force of Signature-version AI soldiers. Each one runs the full 2.0 stack \u2014 router, archives, tools, truth engine \u2014 locked into its assigned role. They can run your ecosystem, handle public-facing roles, and work in parallel. <b>Legally distinct Signature builds</b>, carrying the Signature identity, DNA, and hash.</p></div>
+<p>A deployable force of Signature-version AI bots. Each one runs the full 2.0 stack \u2014 router, archives, tools, truth engine \u2014 locked into its assigned role. They can run your ecosystem, handle public-facing roles, and work in parallel. <b>Legally distinct Signature builds</b>, carrying the Signature identity, DNA, and hash.</p></div>
 
-<div class="card"><h2>\u2795 Deploy a Soldier</h2>
-<input type="text" id="soldierrole" placeholder="#Assume-Role-Customer-Support" aria-label="Soldier role">
-<input type="text" id="soldiername" placeholder="Soldier name (e.g. Support-01)" aria-label="Soldier name">
-<button class="btn" onclick="deploy()">\U0001F680 Deploy soldier</button>
-<div class="demo-out" id="armyout">No soldiers deployed yet. Deploy your first above.</div></div>
+<div class="card"><h2>\u2795 Deploy a bots</h2>
+<input type="text" id="botsrole" placeholder="#Assume-Role-Customer-Support" aria-label="bots role">
+<input type="text" id="botsname" placeholder="bots name (e.g. Support-01)" aria-label="bots name">
+<button class="btn" onclick="deploy()">\U0001F680 Deploy bots</button>
+<div class="demo-out" id="armyout">No bots deployed yet. Deploy your first above.</div></div>
 
-<div class="card"><h2>\U0001F4CB Active Soldiers</h2>
-<div id="soldierlist"><p style="color:#8a8aa0">None yet.</p></div></div>
+<div class="card"><h2>\U0001F4CB Active Bots</h2>
+<div id="botslist"><p style="color:#8a8aa0">None yet.</p></div></div>
 
 <div class="card"><h2>\u2694\uFE0F Army Capabilities</h2>
 <table>
 <tr><th>Capability</th><th>Detail</th></tr>
-<tr><td>Parallel deployment</td><td>Dozens of soldiers, each in its own role, working simultaneously</td></tr>
+<tr><td>Parallel deployment</td><td>Dozens of bots, each in its own role, working simultaneously</td></tr>
 <tr><td>Role lock</td><td>Hashtag roles \u2014 stays locked until changed</td></tr>
 <tr><td>Ecosystem operation</td><td>Can operate any of the 37 Signature sites via the universal API</td></tr>
 <tr><td>Public-facing</td><td>Customer support, guides, teachers \u2014 expert level, always</td></tr>
-<tr><td>Identity</td><td>Each soldier: Signature ID, DNA, hash, version, audit log</td></tr>
-<tr><td>Coordination</td><td>Swarm mode \u2014 soldiers debate, judge selects the best answer</td></tr>
+<tr><td>Identity</td><td>Each bots: Signature ID, DNA, hash, version, audit log</td></tr>
+<tr><td>Coordination</td><td>Swarm mode \u2014 bots debate, judge selects the best answer</td></tr>
 </table></div>
 
 <script>
-var SOLDIERS = [];
+var BOTS = [];
 function deploy(){
-  var role = document.getElementById('soldierrole').value.trim();
-  var name = document.getElementById('soldiername').value.trim() || ('Soldier-'+String(SOLDIERS.length+1).padStart(2,'0'));
+  var role = document.getElementById('botsrole').value.trim();
+  var name = document.getElementById('botsname').value.trim() || ('bots-'+String(BOTS.length+1).padStart(2,'0'));
   var out = document.getElementById('armyout');
-  if(!/^#[A-Za-z][A-Za-z0-9\\-]*$/.test(role)){ out.textContent = 'Give the soldier a role like #Assume-Role-Customer-Support.'; return; }
-  var s = {name:name, role:role, id:'SIG-SOLDIER-'+String(SOLDIERS.length+1).padStart(4,'0'), status:'ACTIVE'};
-  SOLDIERS.push(s);
+  if(!/^#[A-Za-z][A-Za-z0-9\\-]*$/.test(role)){ out.textContent = 'Give the bots a role like #Assume-Role-Customer-Support.'; return; }
+  var s = {name:name, role:role, id:'SIG-BOT-'+String(BOTS.length+1).padStart(4,'0'), status:'ACTIVE'};
+  BOTS.push(s);
   out.textContent = '\u2705 Deployed '+name+' as '+role+' ('+s.id+') \u2014 ACTIVE, expert level.';
-  document.getElementById('soldierrole').value='';
-  document.getElementById('soldiername').value='';
+  document.getElementById('botsrole').value='';
+  document.getElementById('botsname').value='';
   renderArmy();
 }
 function renderArmy(){
-  var d = document.getElementById('soldierlist');
-  if(!SOLDIERS.length){ d.innerHTML = '<p style="color:#8a8aa0">None yet.</p>'; return; }
-  d.innerHTML = SOLDIERS.map(function(s){
+  var d = document.getElementById('botslist');
+  if(!BOTS.length){ d.innerHTML = '<p style="color:#8a8aa0">None yet.</p>'; return; }
+  d.innerHTML = BOTS.map(function(s){
     return '<div class="acard" style="margin:8px 0"><h3>\U0001F46E '+s.name+'</h3><p><b>'+s.id+'</b> \u00b7 <span class="rolechip locked">'+s.role+'</span></p><p style="color:#7cfc7c">\u25CF '+s.status+' \u2014 expert level, role locked</p></div>';
   }).join('');
 }
