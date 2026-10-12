@@ -20,7 +20,7 @@ PAGES = [
  ("roles.html", "Hashtag Roles", "roles.html", ROLES_BODY,
   "Hashtag role lock for Signature Llama 2.0 \u2014 #Task-X and #Assume-Role-Y roles."),
  ("army.html", "Bot Army", "army.html", ARMY_BODY,
-  "Deploy Signature AI soldiers \u2014 the 2.0 bot army, expert level always."),
+  "Deploy Signature AI bots \u2014 the 2.0 bot army, expert level always."),
  ("downloads.html", "Downloads", "downloads.html", DL_BODY,
   "Download Signature Llama 2.0 \u2014 model card, code libraries, offline package. Free forever."),
 ]
