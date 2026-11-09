@@ -130,7 +130,7 @@ def page(title, active, body, desc=""):
 {body}
 </div>
 {nav_html()}
-<footer>SITE 38 OF 38 \u00b7 THE JAH NETWORK<br>Signature Llama 2.0 \u2014 The Best Llama of the Future \u00b7 Justin Addam Higgins' Signature AI</footer>
+<footer>SITE 38 OF 39 \u00b7 THE JAH NETWORK<br>Signature Llama 2.0 \u2014 The Best Llama of the Future \u00b7 Justin Addam Higgins' Signature AI</footer>
 </body>
 </html>"""
 

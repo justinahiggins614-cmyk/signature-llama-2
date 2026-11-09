@@ -1,6 +1,6 @@
 
 # ---- HOW IT WORKS ----
-HOW_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+HOW_BODY = """<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>\u2699\uFE0F How Llama 2.0 Works</h1>
 <p class="tagline">Every answer runs the supreme loop</p>
 
@@ -45,7 +45,7 @@ HOW_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
 """
 
 # ---- ROLES ----
-ROLES_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+ROLES_BODY = """<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>\U0001F3AD Hashtag Roles</h1>
 <p class="tagline">Type a hashtag \u2014 2.0 locks into the role until you change it</p>
 
@@ -125,7 +125,7 @@ document.getElementById('roleq').addEventListener('keydown', function(e){ if(e.k
 </script>"""
 
 # ---- ARMY ----
-ARMY_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+ARMY_BODY = """<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>\U0001F46E Bot Army</h1>
 <p class="tagline">Deploy Signature AI bots \u2014 expert level, always</p>
 
@@ -176,7 +176,7 @@ function renderArmy(){
 </script>"""
 
 # ---- DOWNLOADS ----
-DL_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+DL_BODY = """<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>\u2B07 Downloads</h1>
 <p class="tagline">Everything free, forever \u2014 no account, no payment</p>
 

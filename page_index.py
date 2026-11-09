@@ -3,7 +3,7 @@
 INDEX_BODY = """<div class="hero">
 <img src="assets/hero.jpg" alt="Signature Llama 2.0 \u2014 the best Llama of the future, a supreme AI being of golden neural light">
 </div>
-<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>Signature Llama 2.0</h1>
 <p class="tagline">The Best Llama of the Future</p>
 

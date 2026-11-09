@@ -1,6 +1,6 @@
 
 # ---- MODEL ----
-MODEL_BODY = """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+MODEL_BODY = """<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>\U0001F9A0 Signature Llama 2.0 \u2014 Model Spec</h1>
 <p class="tagline">Best Llama of the Future \u00b7 frontier-scale brain + boundless ecosystem</p>
 

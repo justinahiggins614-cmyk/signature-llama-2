@@ -36,7 +36,7 @@ def archives_body():
         cards.append(f"""<div class="acard"><h3>{name}</h3>
 <p style="font-size:.9em;margin:8px 0">{desc}</p>
 <span class="st {st}">{label}</span></div>""")
-    return """<p class="kicker">SITE 38 OF 38 \u00b7 THE JAH NETWORK</p>
+    return """<p class="kicker">SITE 38 OF 39 \u00b7 THE JAH NETWORK</p>
 <h1>\U0001F5C3\uFE0F Archives Powering Llama 2.0</h1>
 <p class="tagline">Live data 2.0 actively searches \u2014 marching to a million files per archive and beyond</p>
 <div class="card"><h2>\U0001F4CA How 2.0 uses archives</h2>
